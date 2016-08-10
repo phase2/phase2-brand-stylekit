@@ -29,6 +29,7 @@ deploy:
   on:
     branch: master
 - provider: npm
+  email: evanlovely@gmail.com
   on:
     tags: true
   api_key:
