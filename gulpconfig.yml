@@ -20,7 +20,7 @@ css:
     enabled: false
     dest: dest/sassdoc
     verbose: false
-    basePath: https://github.com/phase2/pattern-lab-starter/blob/master/scss
+    basePath: https://github.com/phase2/phase2-brand-stylekit/blob/master/scss
 #    exclude:
 #      - file.scss
     theme: default
@@ -46,7 +46,7 @@ patternLab:
     -
       src: scss/00-config/_color-vars.scss
       dest: pattern-lab/source/_patterns/00-base/01-colors/colors.json
-      lineStartsWith: $c-
+      lineStartsWith: $phase2-
       allowVarValues: false
 
 browserSync:
