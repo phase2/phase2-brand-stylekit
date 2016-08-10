@@ -55,7 +55,7 @@ browserSync:
   watchFiles:
     # - template.php
   baseDir: ./
-  startPath: pattern-lab/public/
+  startPath: public/
   openBrowserAtStart: false
   # requires above to be true; allows non-default browser to open
   browser:

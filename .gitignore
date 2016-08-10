@@ -1,5 +1,6 @@
 # Compiled files
 dest/
+public/*
 scss/00-config/_icons.scss
 
 # OS generated files
