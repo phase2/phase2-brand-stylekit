@@ -15,6 +15,8 @@ before_script:
 - node --version
 - npm --version
 script: npm run compile
+before_deploy:
+- rm -rf node_modules pattern-lab/{core,config,vendor}
 deploy:
   provider: s3
   access_key_id: AKIAJOBGJEAJOHTWTKBQ
