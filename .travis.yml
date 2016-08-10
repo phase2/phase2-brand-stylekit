@@ -1,17 +1,28 @@
 language: php
-# Tests will be for each version in `php` combined with each node version in `env`
 php:
-  - 5.5
+- 5.5
 env:
-  - TRAVIS_NODE_VERSION="6"
+- TRAVIS_NODE_VERSION="6"
 before_install:
-#  - composer clear-cache
-  - rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`) && source ~/.nvm/nvm.sh && nvm install $TRAVIS_NODE_VERSION
+- rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm
+  && git checkout `git describe --abbrev=0 --tags`) && source ~/.nvm/nvm.sh && nvm
+  install $TRAVIS_NODE_VERSION
 install:
-  - npm install
-  - npm run setup
+- npm install
+- npm run setup
 before_script:
-  - php --version
-  - node --version
-  - npm --version
-script: 'npm run compile'
+- php --version
+- node --version
+- npm --version
+script: npm run compile
+deploy:
+  provider: s3
+  access_key_id: AKIAJOBGJEAJOHTWTKBQ
+  secret_access_key:
+    secure: WCcg4hydNf3gaT2Su4k3wkahbgMmEjFAqeQHQgKy490+2QVzNioftIAKzh2vwkUM1ig17RaV2zm6REUREHI6aLyIuQgwXvPp0S8tHzWrXeWvshcph+hTkG56dy6e2M8gpKF0EP6UPyfzrE/g19aFW5r5KK0t3vn/EyPH1uEKbyK8/tFvWXRgRyMQxzj/yZxhmcn/EuRplcJ0Y/iAvl7xz9KOHOlTH19mH7w4i4PqGWG+vSHDzB4KG9GYUS8ud4JPNYeMtcmrau33fFNkZTyrpR5cSW4hBak6qgNtOju/xiknqe7880XqIGlWr4j5x8/H5VxYZog17zOS7jB8FjyCacLKDPYs+PknDQy4Nm+JNqSFRnY5enLtiXDSpL6m1vJ3pFS9LK2YsISy6heYU5YsVXvXTXbLKsy2j20Jl5fl0AXnAGZeQvdVl1qmuZYBLcfxBsKafCxUTp6dNCRyw7ehSsSuGjkZeX8kuzHqVe3uumfLMxqMMFp43cjwojUsjv1ddprmkXOr5EV9Ci0WtTv9DEGdkQvTbVHH64bm+/i6GdwO9A/Ue1pnioqVW+bfMbf6Qez6NOb02DLHAvXiJjDGrTINd3Z2X+bTwPEmY4jXr7J1Kqt2w09nB9RUDZ+Ol5ItcWyGNJ43/5+kPpP9WS+Xsjn96LjklHVUrwqzUgJrgY8=
+  bucket: fable-phase2-brand
+  upload-dir: patternlab
+  acl: public_read
+  skip_cleanup: true
+  on:
+    branch: master
