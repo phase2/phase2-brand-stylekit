@@ -51,3 +51,11 @@
   height: 25px;
   border: dotted 1px hsl(0, 0%, 50%);
 }
+
+a {
+  color: $phase2-orange;
+  transition: color 0.2s ease-out;
+  &:hover {
+    color: $phase2-gold;
+  }
+}

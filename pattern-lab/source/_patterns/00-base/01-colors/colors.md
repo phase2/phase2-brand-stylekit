@@ -1,7 +1,7 @@
-Colors below are automatically pulled from `_color-vars.scss` if they are prefixed with `$c-` and can be used like so:
+Colors can be used like this:
 
 ```scss
 .class {
-  color: $c-red;
+  color: $phase2-orange;
 }
 ```

@@ -1,47 +1,47 @@
 {
   "items": [
     {
-      "name": "$c-orange",
+      "name": "$phase2-orange",
       "value": "#fe7900",
-      "comment": "Primary Orange color"
+      "comment": ""
     },
     {
-      "name": "$c-navy",
+      "name": "$phase2-navy",
       "value": "#0e2e41",
-      "comment": "Primary dark"
+      "comment": ""
     },
     {
-      "name": "$c-gold",
+      "name": "$phase2-gold",
       "value": "#febd3b",
-      "comment": "Gold"
+      "comment": ""
     },
     {
-      "name": "$c-yellow",
+      "name": "$phase2-yellow",
       "value": "#fbd54d",
-      "comment": "The yellow"
+      "comment": ""
     },
     {
-      "name": "$c-teal",
+      "name": "$phase2-teal",
       "value": "#008eb0",
       "comment": ""
     },
     {
-      "name": "$c-gray--dark",
+      "name": "$phase2-gray--dark",
       "value": "#4c4c4e",
       "comment": ""
     },
     {
-      "name": "$c-gray--light",
+      "name": "$phase2-gray--light",
       "value": "#d6d6d6",
       "comment": ""
     },
     {
-      "name": "$c-white",
+      "name": "$phase2-white",
       "value": "#fff",
       "comment": ""
     }
   ],
   "meta": {
-    "description": "To add to these items, use Sass variables that start with <code>$c-</code> in <code>scss/00-config/_color-vars.scss</code>"
+    "description": "To add to these items, use Sass variables that start with <code>$phase2-</code> in <code>scss/00-config/_color-vars.scss</code>"
   }
 }
