@@ -1,0 +1,31 @@
+{
+  "name": "phase2-brand-stylekit",
+  "version": "1.0.0",
+  "description": "Phase2 Brand Stylekit",
+  "main": "scss/_core.scss",
+  "author": {
+    "name": "Evan Lovely",
+    "url": "https://github.com/EvanLovely"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:phase2/phase2-brand-stylekit.git"
+  },
+  "keywords": [
+    "pattern-lab",
+    "phase2"
+  ],
+  "scripts": {
+    "start": "gulp clean && gulp compile && gulp",
+    "compile": "gulp clean && gulp compile",
+    "test": "gulp validate",
+    "setup": "bower install --allow-root && cd pattern-lab && composer install --no-interaction"
+  },
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "gulp": "^3.9.1",
+    "gulp-help": "^1.6.1",
+    "js-yaml": "^3.6.0",
+    "p2-theme-core": "^8.0.4"
+  }
+}

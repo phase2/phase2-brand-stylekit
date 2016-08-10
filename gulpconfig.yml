@@ -1,0 +1,76 @@
+css:
+  enabled: true
+  src:
+    - scss/**/*.scss
+  dest: dest/
+  flattenDestOutput: true
+  lint:
+    enabled: false
+    failOnError: true
+  sourceComments: false
+  sourceMapEmbed: false
+  # tell the compiler whether you want 'expanded' or 'compressed' output code
+  outputStyle: expanded
+  autoPrefixerBrowsers: # https://github.com/ai/browserslist#queries
+    - last 2 versions
+    - IE >= 10
+  includePaths:
+    - ./node_modules
+  sassdoc: # http://sassdoc.com
+    enabled: false
+    dest: dest/sassdoc
+    verbose: false
+    basePath: https://github.com/phase2/pattern-lab-starter/blob/master/scss
+#    exclude:
+#      - file.scss
+    theme: default
+    sort: # http://sassdoc.com/customising-the-view/#sort
+      - file
+      - group
+      - line>
+
+patternLab:
+  enabled: true
+  configFile: pattern-lab/config/config.yml
+  watchedExtensions:
+    - twig
+    - json
+    - yaml
+    - yml
+    - md
+    - jpg
+    - jpeg
+    - png
+  injectBower: true
+  scssToJson:
+    -
+      src: scss/00-config/_color-vars.scss
+      dest: pattern-lab/source/_patterns/00-base/01-colors/colors.json
+      lineStartsWith: $c-
+      allowVarValues: false
+
+browserSync:
+  enabled: true
+  port: 3050
+  watchFiles:
+    # - template.php
+  baseDir: ./
+  startPath: pattern-lab/public/
+  openBrowserAtStart: false
+  # requires above to be true; allows non-default browser to open
+  browser:
+    - Google Chrome
+  # Tunnel the Browsersync server through a random Public URL
+  # -> http://randomstring23232.localtunnel.me
+  tunnel: false
+  reloadDelay: 50
+  reloadDebounce: 750
+
+js:
+  enabled: false
+
+icons:
+  enabled: false
+
+drupal:
+  enabled: false

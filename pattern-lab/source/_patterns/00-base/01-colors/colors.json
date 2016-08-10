@@ -1,0 +1,47 @@
+{
+  "items": [
+    {
+      "name": "$c-orange",
+      "value": "#fe7900",
+      "comment": "Primary Orange color"
+    },
+    {
+      "name": "$c-navy",
+      "value": "#0e2e41",
+      "comment": "Primary dark"
+    },
+    {
+      "name": "$c-gold",
+      "value": "#febd3b",
+      "comment": "Gold"
+    },
+    {
+      "name": "$c-yellow",
+      "value": "#fbd54d",
+      "comment": "The yellow"
+    },
+    {
+      "name": "$c-teal",
+      "value": "#008eb0",
+      "comment": ""
+    },
+    {
+      "name": "$c-gray--dark",
+      "value": "#4c4c4e",
+      "comment": ""
+    },
+    {
+      "name": "$c-gray--light",
+      "value": "#d6d6d6",
+      "comment": ""
+    },
+    {
+      "name": "$c-white",
+      "value": "#fff",
+      "comment": ""
+    }
+  ],
+  "meta": {
+    "description": "To add to these items, use Sass variables that start with <code>$c-</code> in <code>scss/00-config/_color-vars.scss</code>"
+  }
+}
