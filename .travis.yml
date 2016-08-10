@@ -18,7 +18,7 @@ script: npm run compile
 before_deploy:
 - rm -rf node_modules pattern-lab/{core,config,vendor}
 deploy:
-  provider: s3
+- provider: s3
   access_key_id: AKIAJOBGJEAJOHTWTKBQ
   secret_access_key:
     secure: WCcg4hydNf3gaT2Su4k3wkahbgMmEjFAqeQHQgKy490+2QVzNioftIAKzh2vwkUM1ig17RaV2zm6REUREHI6aLyIuQgwXvPp0S8tHzWrXeWvshcph+hTkG56dy6e2M8gpKF0EP6UPyfzrE/g19aFW5r5KK0t3vn/EyPH1uEKbyK8/tFvWXRgRyMQxzj/yZxhmcn/EuRplcJ0Y/iAvl7xz9KOHOlTH19mH7w4i4PqGWG+vSHDzB4KG9GYUS8ud4JPNYeMtcmrau33fFNkZTyrpR5cSW4hBak6qgNtOju/xiknqe7880XqIGlWr4j5x8/H5VxYZog17zOS7jB8FjyCacLKDPYs+PknDQy4Nm+JNqSFRnY5enLtiXDSpL6m1vJ3pFS9LK2YsISy6heYU5YsVXvXTXbLKsy2j20Jl5fl0AXnAGZeQvdVl1qmuZYBLcfxBsKafCxUTp6dNCRyw7ehSsSuGjkZeX8kuzHqVe3uumfLMxqMMFp43cjwojUsjv1ddprmkXOr5EV9Ci0WtTv9DEGdkQvTbVHH64bm+/i6GdwO9A/Ue1pnioqVW+bfMbf6Qez6NOb02DLHAvXiJjDGrTINd3Z2X+bTwPEmY4jXr7J1Kqt2w09nB9RUDZ+Ol5ItcWyGNJ43/5+kPpP9WS+Xsjn96LjklHVUrwqzUgJrgY8=
@@ -28,3 +28,8 @@ deploy:
   skip_cleanup: true
   on:
     branch: master
+- provider: npm
+  on:
+    tags: true
+  api_key:
+    secure: JbUQJP2vR3sBDLCtsHyEJsc9yRLPWCP6BeBaSPTbrNB7NOedGH9gbtRMxCEHytVQTqdaux7l1T+y+vo/mmMjXHq3T6S4tTbuNZC8xe0m1gt+jo7FGAUEynz5SQOu2Fnx1s5YPf+0VQIXaDhE3TsF8Rm8zoTyvziv7uFUIsrIpnlWyoJHW42wpgnHjDQS3geVnKMIcSCg2qn8U/qmusT0SGwVC0BxL3vTfP8WiYl338zURyU4I590Wl8Tg6uci8q0G9Wb7NcXnH+/SmeZWsZdjtD+lgeRnBFzOBuWPIdDrV23Lm2TRAetpvwgFjugbOYhiiY1J/7jIyobJIg+LRuBBXGnKAeOLw1atIWI4fI+ZiBkf3cnOkECxQYwyPtFaqN2NTiPFhX/BYtyS9kHODKpDhk6YkgqFYRyNdz/nOHbH6BPeUApW1Jxxs41AHqtU0xqpw6tRnuBXJ2rBlwEK+mECjtwidUWsTI0skEQXb1p9iNxFo4b5W5mu4ylijAwnY96T2BNMeR9R0BSD7gkOnhgFDiVmzk0yB28Nvb2qSA8gf2i53ZtKjrlTnYGwO/Y6OpTJaRPl2OBLKITi8smOWnJnDj1V7VSlMmfTjoX4MQAX2T2gBNWsNwmIiRZ8SAhwA/nWbBT6hXlKwggHQ2qhlG9IxYNMDHoJ3CiQXyJdFs/rMY=
