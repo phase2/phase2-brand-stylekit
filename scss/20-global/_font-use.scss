@@ -1,0 +1,10 @@
+@include phase2-font-oswald-import();
+@include phase2-font-source-sans-import();
+
+.phase2-font--source-sans {
+  font-family: $phase2-font--source-sans;
+}
+
+.phase2-font--oswald {
+  font-family: $phase2-font--oswald;
+}
