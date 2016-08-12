@@ -46,6 +46,18 @@
   border-radius: 8px;
 }
 
+.sg-items {
+  display: flex;
+  flex-wrap: wrap;
+  &__item {
+    flex: auto;
+    padding: 0.3em;
+    margin: 0 0.5em 0.5em 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+}
+
 .sg-colors .sg-swatch {
   display: block;
   height: 25px;

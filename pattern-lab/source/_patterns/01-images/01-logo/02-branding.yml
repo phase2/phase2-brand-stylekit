@@ -1,0 +1,9 @@
+intro: These are for screen usage (RGB format). Gray backgrounds are simply to show white use. Right click to save.
+folder: img/branding/
+items:
+- src: branding--gray--rgb.png
+- src: branding--orange-p--gray-text--rgb.png
+- src: branding--orange-p--white-text--rgb.png
+  bg: gray--light
+- src: branding--white--rgb.png
+  bg: gray--light
