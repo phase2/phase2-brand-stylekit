@@ -2,7 +2,7 @@
 <div class="sg-items">
   {% for item in items %}
     <figure class="sg-items__item{% if item.bg %} u-bg--{{ item.bg }}{% endif %}">
-      <img src="../../../../img/{{ item.src }}" alt="">
+      <img src="../../../img/{{ item.src }}" alt="">
       {% if item.caption %}<figcaption class="sg-items__caption">{{ item.caption }}</figcaption>{% endif %}
     </figure>
   {% endfor %}
