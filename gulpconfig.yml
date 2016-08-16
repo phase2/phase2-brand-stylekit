@@ -17,7 +17,7 @@ css:
   includePaths:
     - ./node_modules
   sassdoc: # http://sassdoc.com
-    enabled: false
+    enabled: true
     dest: dest/sassdoc
     verbose: false
     basePath: https://github.com/phase2/phase2-brand-stylekit/blob/master/scss

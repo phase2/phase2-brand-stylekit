@@ -1,9 +1,22 @@
-@mixin phase2-font-oswald-import() {
-  @import url('https://fonts.googleapis.com/css?family=Oswald:400,300,700');
+/// Import Google Font
+/// @param {list} $variants - Font Weight and Style variants (i.e. `("300", "400", "400i")`) - `i` = italic
+/// @param {string} $family - Font Family with spaces as `+` (i.e. `Source+Sans+Pro`)
+/// @output `@import()` statement
+/// @example scss
+///   @include google-font-import($variants: ("300", "400", "400i", "700"), $family: "Source+Sans+Pro");
+///   // would output `@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700");`
+@mixin google-font-import($variants, $family) {
+  @import url('//fonts.googleapis.com/css?family=#{$family}:#{to-string($variants, ",")}');
 }
 
-@mixin phase2-font-source-sans-import() {
-  @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic');
+@mixin phase2-font-oswald-import($variants: ("400", "300", "700")) {
+  /* https://fonts.google.com/specimen/Oswald */
+  @include google-font-import($variants, $family: 'Oswald');
+}
+
+@mixin phase2-font-source-sans-import($variants: ("300", "400", "400i", "700")) {
+  /* https://fonts.google.com/specimen/Source+Sans+Pro */
+  @include google-font-import($variants, $family: 'Source+Sans+Pro');
 }
 
 $phase2-font--source-sans: 'Source Sans Pro', sans-serif;
