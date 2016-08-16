@@ -79,3 +79,15 @@ a {
 body {
   font-family: $phase2-font--source-sans;
 }
+
+pre {
+  border-radius: ms(1);
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+code {
+  background: transparentize($phase2-gray--light, 0.2);
+  padding: 0 3px;
+  border-radius: 4px;
+}
