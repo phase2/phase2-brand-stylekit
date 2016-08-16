@@ -14,7 +14,9 @@ before_script:
 - php --version
 - node --version
 - npm --version
-script: npm run compile
+script:
+- npm run compile
+- npm test
 before_deploy:
 - rm -rf node_modules pattern-lab/{core,config,vendor}
 deploy:
