@@ -21,6 +21,11 @@ Assuming you have a `scss/` folder next to `node_modules`; in the `scss/style.sc
 
 After importing it into your scss, you'll have access to variables and mixins that you can use. This **will not** generate any CSS by simply including; you still need to use the mixins and variables in your desired CSS selectors.
 
+Documentation for use can be found in these two places:
+
+- [Pattern Lab](http://brand.phase2technology.com/patternlab/public)
+- [SassDoc](http://brand.phase2technology.com/patternlab/dest/sassdoc)
+
 ---
 
 # Using this repo's Pattern Lab
