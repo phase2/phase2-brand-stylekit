@@ -54,7 +54,7 @@ browserSync:
   enabled: true
   port: 3050
   watchFiles:
-    # - template.php
+    - pattern-lab/source/styleguide/styleguide.js
   baseDir: ./
   startPath: public/
   openBrowserAtStart: false

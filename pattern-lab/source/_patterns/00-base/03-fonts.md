@@ -25,3 +25,5 @@ To apply to some html, add:
     font-family: $phase2-font--oswald;
 }
 ```
+
+[Edit this](https://github.com/phase2/phase2-brand-stylekit/blob/master/pattern-lab/source/_patterns/00-base/03-fonts.md)

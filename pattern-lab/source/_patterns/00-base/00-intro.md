@@ -12,3 +12,5 @@ Assuming you have a `scss/` folder next to `node_modules`; in the `scss/style.sc
 ```
 
 For more information on how to install, see the [`phase2-brand-stylekit` GitHub repo](https://github.com/phase2/phase2-brand-stylekit). Also, more information can be found on the [Phase2 Brand Guidelines site](http://brand.phase2technology.com).
+
+[Edit this](https://github.com/phase2/phase2-brand-stylekit/blob/master/pattern-lab/source/_patterns/00-base/00-intro.md)

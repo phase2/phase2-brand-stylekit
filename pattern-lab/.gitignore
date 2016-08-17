@@ -4,5 +4,5 @@ export/*
 packages/*
 public/*
 vendor/*
-source/styleguide/*
+source/styleguide/css/*
 config/*.json
