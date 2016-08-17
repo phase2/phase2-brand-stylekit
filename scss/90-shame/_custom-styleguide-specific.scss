@@ -7,6 +7,11 @@
  * It's also helpful for overriding context-specific styles like fixed or absolutely positioned elements
  * These styles will not be your production CSS.
  */
+
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+}
+
 .sg-pattern-example {
   padding-bottom: 5px;
   /* `position: fixed;` elements will be relative to this ~ http://stackoverflow.com/a/15885486 */

@@ -1,8 +1,10 @@
-$phase2-orange: #fe7900;
-$phase2-navy: #0e2e41;
-$phase2-gold: #febd3b;
-$phase2-yellow: #fbd54d;
-$phase2-teal: #008eb0;
-$phase2-gray--dark: #4c4c4e;
-$phase2-gray--light: #d6d6d6;
-$phase2-white: #fff;
+$phase2-orange: hsl(28, 100%, 49%);
+$phase2-orange--transparent: hsla(28, 100%, 49%, 0.85);
+$phase2-navy: hsl(202, 64%, 15%);
+$phase2-navy--transparent: hsla(202, 64%, 15%, 0.85);
+$phase2-gold: hsl(40, 98%, 61%);
+$phase2-yellow: hsl(46, 95%, 64%);
+$phase2-teal: hsl(191, 100%, 34%);
+$phase2-gray--dark: hsl(240, 1%, 30%);
+$phase2-gray--light: hsl(0, 0%, 83%);
+$phase2-white: hsl(0, 0%, 100%);

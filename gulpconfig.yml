@@ -2,6 +2,7 @@ css:
   enabled: true
   src:
     - scss/**/*.scss
+    - pattern-lab/source/_patterns/**/*.scss
   dest: dest/
   flattenDestOutput: true
   lint:
