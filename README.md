@@ -61,3 +61,4 @@ npm run start # or `npm start`
 ## Deploying
 
 Simply pushing to `master` will compile and deploy the site to <http://brand.phase2technology.com/patternlab/public/>
+
