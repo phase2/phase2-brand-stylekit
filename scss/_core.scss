@@ -1,3 +1,10 @@
+// This file is what is imported by downstream dependencies and should not export anything that would create CSS.
+// So basically we export out variables, mixins, and functions.
+// If this file creates CSS then `npm test` fails, which is ran by the Travis CI.
+
+// We can't use globbing in here because downstream projects that rely on this might not have sass globbing installed
+// and even if they did, we can't be sure it'd be configured correctly to globb-ify this file. We can use globbing in
+// the `style.scss` file that is responsible for styling the Pattern Lab instance though.
 @import "00-config/color-vars";
 @import "00-config/util";
 @import "10-base/fonts";

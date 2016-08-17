@@ -2,7 +2,7 @@ css:
   enabled: true
   src:
     - scss/**/*.scss
-    - pattern-lab/source/_patterns/**/*.scss
+    - pattern-lab/source/{styleguide,_patterns}/**/*.scss
   dest: dest/
   flattenDestOutput: true
   lint:

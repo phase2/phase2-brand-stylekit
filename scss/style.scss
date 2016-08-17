@@ -1,5 +1,2 @@
 @import "core";
-@import "../pattern-lab/source/_patterns/**/*.scss";
-@import "20-global/**/*.scss";
-@import "70-utilities/**/*.scss";
-@import "90-shame/**/*.scss";
+@import "../pattern-lab/source/{styleguide,_patterns}/**/*.scss";
