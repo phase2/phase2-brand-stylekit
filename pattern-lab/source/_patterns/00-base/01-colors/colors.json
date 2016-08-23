@@ -36,6 +36,11 @@
       "comment": ""
     },
     {
+      "name": "$phase2-text-color",
+      "value": "hsl(255, 0%, 15%)",
+      "comment": ""
+    },
+    {
       "name": "$phase2-gray--dark",
       "value": "hsl(240, 1%, 30%)",
       "comment": ""

@@ -9,13 +9,15 @@
   @import url('//fonts.googleapis.com/css?family=#{$family}:#{to-string($variants, ",")}');
 }
 
+/// Import Oswald Font
+/// @link https://fonts.google.com/specimen/Oswald
 @mixin phase2-font-oswald-import($variants: ("400", "300", "700")) {
-  /* https://fonts.google.com/specimen/Oswald */
   @include google-font-import($variants, $family: 'Oswald');
 }
 
+/// Import Source Sans Pro Font
+/// @link https://fonts.google.com/specimen/Source+Sans+Pro
 @mixin phase2-font-source-sans-import($variants: ("300", "400", "400i", "700")) {
-  /* https://fonts.google.com/specimen/Source+Sans+Pro */
   @include google-font-import($variants, $family: 'Source+Sans+Pro');
 }
 
