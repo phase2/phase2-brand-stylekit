@@ -1,6 +1,6 @@
 {
   "name": "phase2-brand-stylekit",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Phase2 Brand Stylekit",
   "main": "scss/_core.scss",
   "author": {
