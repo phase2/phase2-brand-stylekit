@@ -3,7 +3,7 @@
     {
       "name": "$phase2-orange",
       "value": "hsl(28, 100%, 49%)",
-      "comment": ""
+      "comment": "#fa7500"
     },
     {
       "name": "$phase2-orange--transparent",
@@ -13,7 +13,7 @@
     {
       "name": "$phase2-navy",
       "value": "hsl(202, 64%, 15%)",
-      "comment": ""
+      "comment": "#0e2d3f"
     },
     {
       "name": "$phase2-navy--transparent",
@@ -23,37 +23,37 @@
     {
       "name": "$phase2-gold",
       "value": "hsl(40, 98%, 61%)",
-      "comment": ""
+      "comment": "#fdbc3a"
     },
     {
       "name": "$phase2-yellow",
       "value": "hsl(46, 95%, 64%)",
-      "comment": ""
+      "comment": "#fad24c"
     },
     {
       "name": "$phase2-teal",
       "value": "hsl(191, 100%, 34%)",
-      "comment": ""
+      "comment": "#008ead"
     },
     {
       "name": "$phase2-text-color",
       "value": "hsl(255, 0%, 15%)",
-      "comment": ""
+      "comment": "#262626"
     },
     {
       "name": "$phase2-gray--dark",
       "value": "hsl(240, 1%, 30%)",
-      "comment": ""
+      "comment": "#4c4c4d"
     },
     {
       "name": "$phase2-gray--light",
       "value": "hsl(0, 0%, 83%)",
-      "comment": ""
+      "comment": "#d4d4d4"
     },
     {
       "name": "$phase2-white",
       "value": "hsl(0, 0%, 100%)",
-      "comment": ""
+      "comment": "#ffffff"
     }
   ],
   "meta": {
